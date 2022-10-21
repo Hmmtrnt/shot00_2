@@ -26,18 +26,21 @@ public:
 	bool isExist() const { return m_isExist; }
 	void setExist(bool isExist) { m_isExist = isExist; }
 
+	// プレイヤーが撃った弾か
+	bool isPlayerShot() const { return m_isPlayerShot; }
+	void setPlayerShot(bool isPlayerShot) { m_isPlayerShot = isPlayerShot; }
 	// 敵との当たり判定
 	bool isCol(Enemy& enemy);
 
 private:
 	// グラフィックハンドル
 	int m_handle;
-
 	// 存在フラグ
 	bool m_isExist;
-
 	// 表示位置
 	Vec2	m_pos;
 	// 移動
 	Vec2	m_vec;
+	// プレイヤーが撃った弾かどうか
+	bool	m_isPlayerShot;
 };

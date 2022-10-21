@@ -79,6 +79,7 @@ bool SceneMain::createShot(Vec2 pos, bool isPlayer)
 				vec.x *= -1.0f;
 			}
 			shot.setVec(vec);
+			shot.setPlayerShot(isPlayer);
 
 			return true;
 		}

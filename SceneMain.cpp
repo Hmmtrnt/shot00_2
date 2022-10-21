@@ -1,10 +1,14 @@
 #include "DxLib.h"
 #include "SceneMain.h"
 
-SceneMain::SceneMain()
+SceneMain::SceneMain() :
+	m_hPlayerGraphic(-1),
+	m_hShotGraphic(-1),
+	m_player(),
+	m_enemy(),
+	m_shot()
 {
-	m_hPlayerGraphic = -1;
-	m_hShotGraphic = -1;
+	m_shot.resize(kShotMax);
 }
 SceneMain::~SceneMain()
 {

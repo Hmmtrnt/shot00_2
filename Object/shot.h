@@ -19,6 +19,9 @@ public:
 	// •\¦
 	void draw();
 
+	// ’e‚Ìis•ûŒüŒˆ’è
+	void setVec(Vec2 vec) { m_vec = vec; }
+
 	// ‘¶İ‚·‚é‚©
 	bool isExist() const { return m_isExist; }
 	void setExist(bool isExist) { m_isExist = isExist; }
